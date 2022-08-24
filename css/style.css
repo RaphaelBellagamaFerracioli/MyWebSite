@@ -4,9 +4,24 @@
 }
 body {
   margin:0;
- animation:  changeBackgroundColor 7s infinite;
+  animation:  changeBackgroundImage 30s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.body:nth-child(1) {
+
+
+}
+.body:nth-child(2) {
+
+      animation-delay: 5s;
+}
+.body:nth-child(3) {
+  animation-delay: 10s;
+  
+}
 .navbar {
     
   overflow: hidden;
@@ -50,15 +65,25 @@ body {
 
   }
 
-  @keyframes changeBackgroundColor {
+  @keyframes changeBackgroundImage {
+        
+
     0% {
-      background-color: #001F3F;
+      
+      background-image: url("../img/nova2b.jpg");
     }
     50% {
-      background-color: #FF4136;
+      
+      background-image: url("../img/doisb.jpg");
     }
     100% {
-      background-color: #001F3F;
+     
+      background-image: url("../img/mais2b.jpg");
+    }
+    0% {
+    
+      background-image: url("../img/nova2b.jpg");
+      
     }
   }
     
